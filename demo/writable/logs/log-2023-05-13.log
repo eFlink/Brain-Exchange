@@ -1,0 +1,130 @@
+CRITICAL - 2023-05-13 00:12:10 --> The framework needs the following extension(s) installed and loaded: "IMAGICK".
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 54.
+ 1 SYSTEMPATH/Images/Handlers/ImageMagickHandler.php(46): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH/Config/Services.php(341): CodeIgniter\Images\Handlers\ImageMagickHandler->__construct()
+ 3 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::image()
+ 4 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+ 5 SYSTEMPATH/Config/Services.php(332): CodeIgniter\Config\BaseService::getSharedInstance()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::image()
+ 7 APPPATH/Models/Image_model.php(15): CodeIgniter\Config\BaseService::__callStatic()
+ 8 APPPATH/Controllers/Home.php(74): App\Models\Image_model->rotate()
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->check_post()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 00:13:55 --> Class "Imagick" not found
+in APPPATH/Models/Image_model.php on line 15.
+ 1 APPPATH/Controllers/Home.php(74): App\Models\Image_model->rotate()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->check_post()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 00:17:42 --> Class "Imagick" not found
+in APPPATH/Models/Image_model.php on line 15.
+ 1 APPPATH/Controllers/Home.php(74): App\Models\Image_model->rotate()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->check_post()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 00:28:36 --> Class "Imagick" not found
+in APPPATH/Models/Image_model.php on line 15.
+ 1 APPPATH/Controllers/Home.php(74): App\Models\Image_model->rotate()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->check_post()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 00:29:17 --> Class "Imagick" not found
+in APPPATH/Models/Image_model.php on line 15.
+ 1 APPPATH/Controllers/Home.php(74): App\Models\Image_model->rotate()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->check_post()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 00:34:24 --> Class "Imagick" not found
+in APPPATH/Models/Image_model.php on line 15.
+ 1 APPPATH/Controllers/Home.php(74): App\Models\Image_model->rotate()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->check_post()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 00:36:20 --> unable to open image `/var/www/htdocs/demo/writable/uploads/1683938180_d4f15d4f67be87f62f24.png': No such file or directory @ error/blob.c/OpenBlob/2874
+in APPPATH/Models/Image_model.php on line 15.
+ 1 APPPATH/Models/Image_model.php(15): Imagick->__construct()
+ 2 APPPATH/Controllers/Home.php(74): App\Models\Image_model->rotate()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->check_post()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-13 10:46:50 --> mysqli_sql_exception: Table 'demo.likes' doesn't exist in /var/www/htdocs/demo/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/demo/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/demo/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/demo/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/demo/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/demo/app/Models/User_model.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/htdocs/demo/app/Controllers/Profile.php(14): App\Models\User_model->get_total_likes()
+#6 /var/www/htdocs/demo/system/CodeIgniter.php(934): App\Controllers\Profile->edit()
+#7 /var/www/htdocs/demo/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/demo/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/demo/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-13 10:46:50 --> Table 'demo.likes' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Profile.php(14): App\Models\User_model->get_total_likes()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profile->edit()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-13 10:47:10 --> mysqli_sql_exception: Unknown column 'favourites.count' in 'field list' in /var/www/htdocs/demo/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/demo/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/demo/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/demo/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/demo/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/demo/app/Models/User_model.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/htdocs/demo/app/Controllers/Profile.php(14): App\Models\User_model->get_total_likes()
+#6 /var/www/htdocs/demo/system/CodeIgniter.php(934): App\Controllers\Profile->edit()
+#7 /var/www/htdocs/demo/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/demo/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/demo/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-13 10:47:10 --> Unknown column 'favourites.count' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/User_model.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Profile.php(14): App\Models\User_model->get_total_likes()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profile->edit()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 10:50:09 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 882.
+ 1 SYSTEMPATH/Model.php(642): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Profile.php(15): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profile->edit()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 10:50:31 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 882.
+ 1 SYSTEMPATH/Model.php(642): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Profile.php(15): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profile->edit()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-13 10:50:47 --> Undefined variable $total_posts
+in APPPATH/Views/edit_profile.php on line 30.
+ 1 APPPATH/Views/edit_profile.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/edit_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Profile.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Profile->edit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
