@@ -16,20 +16,20 @@ Technically, I leveraged various client-side technologies to develop the front e
 Features Implemented
 The website is equipped with a wide range of functionalities:
 
-User Login and Registration
-User Profile creation and updating
-'Remember Me' functionality using Cookies
-Favourites or Bookmarks for courses
-Adding and Writing Comments for courses
-Basic and Multiple File Uploading
-Drag and Drop Files feature
-Search Box with Autocompletion
-Web Security measures including Password Encryption
-Maintaining Scroll Position
-Image Processing
-A Bookmarks List
-An advanced Recommendation Algorithm
-A comprehensive Management Dashboard for administration
+- User Login and Registration
+- User Profile creation and updating
+- 'Remember Me' functionality using Cookies
+- Favourites or Bookmarks for courses
+- Adding and Writing Comments for courses
+- Basic and Multiple File Uploading
+- Drag and Drop Files feature
+- Search Box with Autocompletion
+- Web Security measures including Password Encryption
+- Maintaining Scroll Position
+- Image Processing
+- A Bookmarks List
+- An advanced Recommendation Algorithm
+- A comprehensive Management Dashboard for administration
 Each feature was built in stages throughout the course duration, with the complete set of functionalities assessed over several milestone checkup sessions.
 
 Project Outcome
