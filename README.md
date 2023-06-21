@@ -14,24 +14,23 @@ The project involved creating an Online Learning System, akin to platforms like 
 Technically, I leveraged various client-side technologies to develop the front end, such as HTML, CSS, and JavaScript. For the back end, PHP and the CodeIgniter framework were employed. The project follows the Model-View-Controller (MVC) design pattern and was deployed on the UQCloud zone.
 
 Features Implemented
-The website is equipped with a wide range of functionalities:
+The website is equipped with a wide range of functionalities including but not limited to:
 
 - User Login and Registration
-- User Profile creation and updating
+- User Profile updating by adding course
 - 'Remember Me' functionality using Cookies
-- Favourites or Bookmarks for courses
-- Adding and Writing Comments for courses
+- Bookmarks for course posts
+- Adding and Writing Comments on posts
 - Basic and Multiple File Uploading
+- Making posts for courses
 - Drag and Drop Files feature
 - Search Box with Autocompletion
 - Web Security measures including Password Encryption
 - Maintaining Scroll Position
-- Image Processing
-- A Bookmarks List
-- An advanced Recommendation Algorithm
-- A comprehensive Management Dashboard for administration
+- A Recommendation Algorithm
+- A  Management Dashboard 
 
-Each feature was built in stages throughout the course duration, with the complete set of functionalities assessed over several milestone checkup sessions.
+Each feature was built in stages throughout the course duration, with the complete set of functionalities assessed over several milestone checkup sessions. 
 
 Project Outcome
 The project was a success, and I achieved a high score of 95% for the assignment, reflecting my skills and proficiency in various web technologies and their practical applications.
