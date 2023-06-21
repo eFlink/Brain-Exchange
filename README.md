@@ -30,6 +30,7 @@ The website is equipped with a wide range of functionalities:
 - A Bookmarks List
 - An advanced Recommendation Algorithm
 - A comprehensive Management Dashboard for administration
+
 Each feature was built in stages throughout the course duration, with the complete set of functionalities assessed over several milestone checkup sessions.
 
 Project Outcome
